@@ -91,7 +91,7 @@
     -1px 0 var(--shadow-color),
     0 1px var(--shadow-color),
     0 -1px var(--shadow-color);
-  right: 25px;
+  right: 13px;
   top: 25px;
 }
 
@@ -105,4 +105,20 @@
     text-stroke: 1px var(--shadow-color);
     text-shadow: none;
   }
+}
+
+.buttons__section {
+  padding: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button__like {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 90%;
+  color: var(--main-color);
+  padding: 12.5px 37px;
+  background-color: transparent;
+  border: 2px solid var(--main-color);
 }
