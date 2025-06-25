@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -41,15 +41,32 @@
       </article>
     </main>
     <footer class="footer">
-      <button class="save__button">
-        <svg viewBox="0 0 28 28" class="floppy_svg">
+      <button
+        class="save__button"
+        type="button"
+        onclick="window['dialog-id'].showModal()"
+        aria-controls="dialog-id"
+      >
+        <svg viewBox="0 0 28 28" class="floppy__svg">
           <use href="./svg/floppy.svg"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
-    <dialog id="dialog-id">
-
+    <dialog id="dialog-id" class="dialog">
+      <div class="modal__window">
+        <div class="dialog__content">
+          <svg viewBox="0 0 28 28" class="floppy__svg_dialog">
+            <use href="./svg/floppy.svg"></use>
+          </svg>
+          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        </div>
+        <form>
+          <button class="dialog__button">
+            <span class="button__text">ок</span>
+          </button>
+        </form>
+      </div>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>

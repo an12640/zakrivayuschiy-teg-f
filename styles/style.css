@@ -131,6 +131,7 @@
   font-size: 14px;
   line-height: 90%;
   color: var(--main-color);
+  text-transform: uppercase;
 }
 
 .footer {
@@ -151,7 +152,42 @@
   background-color: transparent;
 }
 
-.floppy_svg {
+.floppy__svg {
   width: 28px;
   height: 28px;
+}
+
+.modal__window {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dialog {
+  padding: 30px 42px;
+}
+
+.dialog__content {
+  display: flex;
+  gap: 20px;
+}
+
+.dialog__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.floppy__svg_dialog {
+  width: 39px;
+  height: 39px;
+}
+
+.dialog__button {
+  background-color: transparent;
+  width: 100%;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
 }
