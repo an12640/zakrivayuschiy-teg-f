@@ -87,7 +87,7 @@
   filter: saturate(40%);
 }
 
-.image__filter-brigtness {
+.image__filter-brightness {
   filter: brightness(200%);
 }
 
@@ -145,10 +145,6 @@
   }
 }
 
-.button {
-  background-color: var(--bg-color);
-}
-
 .buttons__section {
   padding: 0 25px 25px;
   display: flex;
@@ -186,15 +182,14 @@
   gap: 8px;
   justify-content: center;
   align-items: center;
-  /* background-color: transparent; */
 }
 
-.floppy__svg {
+.floppy__svg-modal {
   width: 39px;
   height: 39px;
 }
 
-.floppy-modal-icon {
+.floppy__svg {
   width: 21px;
   height: 21px;
 }
@@ -249,7 +244,38 @@ dialog::backdrop {
 }
 
 .button {
-  color: red;
+  position: relative;
+  color: var(--bg-color);
+  background-color: var(--bg-color);
+  overflow: hidden;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--main-color);
+  transition: box-shadow 0.3s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  background-color: var(--main-color);
+  inset: 0;
+}
+
+.button:hover::before {
+  transform: translateX(0);
+}
+
+.button .floppy__svg-modal,
+.button .floppy__svg {
+  mix-blend-mode: difference;
+}
+
+.button .button__text {
+  mix-blend-mode: difference;
 }
 
 @media (width <=375px) {

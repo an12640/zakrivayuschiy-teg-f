@@ -36,9 +36,9 @@
           <p class="text">Место для ваших воспоминаний о начале обучения.</p>
         </div>
         <div class="buttons__section">
-          <button class="button__heart button"></button>
-          <button class="button__like button">
-            <span class="button__text button">Like</span>
+          <button class="button button__heart"></button>
+          <button class="button button__like">
+            <span class="button__text">Like</span>
           </button>
         </div>
       </article>
@@ -67,7 +67,7 @@
         <div class="buttons__section">
           <button class="button__heart button"></button>
           <button class="button__like button">
-            <span class="button__text button">Like</span>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </article>
@@ -76,7 +76,7 @@
         <div class="image__section">
           <span class="watermark">&lt;CSS&gt;</span>
           <img
-            class="image image__filter-brigtness"
+            class="image image__filter-brightness"
             src="./images/image.png"
             alt="Фургон"
           />
@@ -94,7 +94,7 @@
         <div class="buttons__section">
           <button class="button__heart button"></button>
           <button class="button__like button">
-            <span class="button__text button">Like</span>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </article>
@@ -123,7 +123,7 @@
         <div class="buttons__section">
           <button class="button__heart button"></button>
           <button class="button__like button">
-            <span class="button__text button">Like</span>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </article>
@@ -153,7 +153,7 @@
         <div class="buttons__section">
           <button class="button__heart button"></button>
           <button class="button__like button">
-            <span class="button__text button">Like</span>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </article>
@@ -180,7 +180,7 @@
         <div class="buttons__section">
           <button class="button__heart button"></button>
           <button class="button__like button">
-            <span class="button__text button">Like</span>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </article>
@@ -209,7 +209,7 @@
         <div class="buttons__section">
           <button class="button__heart button"></button>
           <button class="button__like button">
-            <span class="button__text button">Like</span>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </article>
@@ -240,19 +240,19 @@
         <div class="buttons__section">
           <button class="button__heart button"></button>
           <button class="button__like button">
-            <span class="button__text button">Like</span>
+            <span class="button__text">Like</span>
           </button>
         </div>
       </article>
     </main>
     <footer class="footer">
       <button
-        class="save__button button"
+        class="button save__button"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
-        <svg viewBox="0 0 40 40" class="floppy-modal-icon">
+        <svg viewBox="0 0 40 40" class="floppy__svg">
           <use href="./svg/floppy.svg#icon"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
@@ -261,7 +261,7 @@
     <dialog id="dialog-id" class="dialog">
       <div class="modal__window">
         <div class="dialog__content">
-          <svg viewBox="0 0 40 40" class="floppy__svg">
+          <svg viewBox="0 0 40 40" class="floppy__svg-modal">
             <use href="./svg/floppy.svg#icon"></use>
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
