@@ -276,7 +276,7 @@ dialog::backdrop {
   mix-blend-mode: difference;
 }
 
-.heart__svg {
+.like-icon {
   width: 27px;
   height: 24px;
   color: var(--main-color);
