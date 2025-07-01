@@ -65,8 +65,6 @@
 .image {
   object-fit: cover;
   object-position: right;
-  /* border-top: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color); */
   aspect-ratio: 1 / 1;
   width: 100%;
   height: auto;
@@ -202,7 +200,7 @@
 
 .dialog {
   border: 2px solid var(--main-color);
-  padding: 30px 38px;
+  padding: 30px;
   max-width: 353px;
 }
 
@@ -278,6 +276,31 @@ dialog::backdrop {
   mix-blend-mode: difference;
 }
 
+.heart__svg {
+  width: 27px;
+  height: 24px;
+  color: var(--main-color);
+  border: none;
+}
+
+.card__icon-button {
+  border: none;
+}
+
+.card__icon-button:focus {
+  box-shadow: none;
+}
+
+.card__icon-button {
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--main-color);
+}
+
 @media (width <=375px) {
 
   .save__button {
@@ -287,5 +310,11 @@ dialog::backdrop {
   .floppy__svg {
     width: 28px;
     height: 28px;
+  }
+
+  .dialog {
+    border: 2px solid var(--main-color);
+    padding: 30px 42px;
+    max-width: 343px;
   }
 }
