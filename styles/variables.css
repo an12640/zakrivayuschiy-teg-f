@@ -8,6 +8,8 @@
   --main-color: #000;
   --shadow-color: #fff;
   --bg-color: #fff;
+  --contour-color: #000;
+  --animation-fill-color: red;
   --bg-image:
     repeating-linear-gradient(
       to right,

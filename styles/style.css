@@ -254,7 +254,9 @@ dialog::backdrop {
   transition: box-shadow 0.3s ease;
 }
 
-.button::before {
+.card__like-button::before,
+.save__button:before,
+.dialog__button:before {
   content: "";
   position: absolute;
   transform: translateX(-100%);
@@ -263,7 +265,9 @@ dialog::backdrop {
   inset: 0;
 }
 
-.button:hover::before {
+.card__like-button:hover::before,
+.save__button:hover::before,
+.dialog__button:hover::before {
   transform: translateX(0);
 }
 
@@ -277,18 +281,10 @@ dialog::backdrop {
 }
 
 .like-icon {
-  width: 27px;
-  height: 24px;
+  width: 39px;
+  height: 36px;
   color: var(--main-color);
   border: none;
-}
-
-.card__icon-button {
-  border: none;
-}
-
-.card__icon-button:focus {
-  box-shadow: none;
 }
 
 .card__icon-button {
@@ -297,8 +293,36 @@ dialog::backdrop {
   outline: none;
 }
 
+.card__icon-button:focus {
+  box-shadow: none;
+}
+
 .card__icon-button:focus-visible {
   border-color: var(--main-color);
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.card__icon-button .main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button .core {
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--contour-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--contour-color);
+  transition: fill 0.3s linear 0.03s;
 }
 
 @media (width <=375px) {
