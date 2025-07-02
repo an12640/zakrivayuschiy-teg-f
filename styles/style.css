@@ -154,7 +154,6 @@
   font-size: 14px;
   line-height: 90%;
   color: var(--main-color);
-  /* padding: 12.5px 37px; */
   width: 130px;
   height: 38px;
   background-color: transparent;
@@ -165,7 +164,6 @@
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 90%;
-  /* text-transform: uppercase; */
 }
 
 .footer {
@@ -228,7 +226,6 @@
 
 .floppy__svg_dialog {
   width: 90px;
-  /* height: 39px; */
 }
 
 .dialog__button {
