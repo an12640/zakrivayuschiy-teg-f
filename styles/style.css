@@ -248,6 +248,7 @@ dialog::backdrop {
   color: var(--bg-color);
   background-color: var(--bg-color);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .button:focus {
@@ -305,26 +306,6 @@ dialog::backdrop {
 
 .sparks {
   opacity: 0;
-}
-
-.card__icon-button .main-body {
-  fill: transparent;
-  transition: fill 0.3s linear;
-}
-
-.card__icon-button .core {
-  fill: transparent;
-  transition: fill 0.3s linear 0.03s;
-}
-
-.card__icon-button:hover .main-body {
-  fill: var(--contour-color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.card__icon-button:hover .core {
-  fill: var(--contour-color);
-  transition: fill 0.3s linear 0.03s;
 }
 
 @media (width <=375px) {
