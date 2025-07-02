@@ -154,7 +154,9 @@
   font-size: 14px;
   line-height: 90%;
   color: var(--main-color);
-  padding: 12.5px 37px;
+  /* padding: 12.5px 37px; */
+  width: 130px;
+  height: 38px;
   background-color: transparent;
   border: 2px solid var(--main-color);
 }
@@ -163,7 +165,7 @@
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 90%;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .footer {
@@ -235,6 +237,9 @@
   padding-top: 12.5px;
   padding-bottom: 12.5px;
   height: 38px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 dialog::backdrop {
